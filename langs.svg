@@ -1,48 +1,94 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="langBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#18132b"/>
-      <stop offset="100%" stop-color="#120f1e"/>
-    </linearGradient>
-  </defs>
-
+<svg width="480" height="300" viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="lg1" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#61dafb"/><stop offset="100%" stop-color="#00b4d8"/>
+  </linearGradient>
+  <linearGradient id="lg2" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#f7df1e"/><stop offset="100%" stop-color="#ff9f1c"/>
+  </linearGradient>
+  <linearGradient id="lg3" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#3776ab"/><stop offset="100%" stop-color="#ffd43b"/>
+  </linearGradient>
+  <linearGradient id="lg4" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#68a063"/><stop offset="100%" stop-color="#3c873a"/>
+  </linearGradient>
+  <linearGradient id="lg5" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#00758f"/><stop offset="100%" stop-color="#f29111"/>
+  </linearGradient>
+  <linearGradient id="lg6" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#777bb4"/><stop offset="100%" stop-color="#4f5b93"/>
+  </linearGradient>
+  <linearGradient id="lg7" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ff2ec4"/><stop offset="100%" stop-color="#7b2ff7"/>
+  </linearGradient>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&amp;family=Outfit:wght@600;800&amp;display=swap');
-    text { font-family: 'Outfit', sans-serif; }
-    .mono { font-family: 'Fira Code', monospace; }
+    .mono { font-family:'Cascadia Code','Fira Code','Consolas',monospace; }
+    .sans { font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif; }
+    .bar { animation: grow 1.4s cubic-bezier(.2,.9,.25,1) forwards; transform-origin: left; transform: scaleX(0); }
+    @keyframes grow { to { transform: scaleX(1); } }
+    .lab { opacity:0; animation: fade 0.5s ease forwards; }
+    @keyframes fade { to { opacity:1; } }
+    .seg { animation: segPulse 4s ease-in-out infinite; }
+    @keyframes segPulse { 0%,100%{opacity:1;} 50%{opacity:0.85;} }
   </style>
+</defs>
 
-  <rect width="490" height="200" rx="16" fill="url(#langBg)" stroke="#2e254d" stroke-width="1.5"/>
+<rect width="480" height="300" rx="16" fill="#0a0e17" stroke="#2a3a5c" stroke-width="1.5"/>
+<text x="24" y="34" class="sans" font-size="16" font-weight="700" fill="#f3f6ff">Most Used Languages &amp; Tech</text>
+<line x1="24" y1="46" x2="456" y2="46" stroke="#1c2740" stroke-width="1"/>
 
-  <text x="30" y="35" font-size="16" font-weight="800" fill="#6ee7f5" letter-spacing="1">MOST USED LANGUAGES</text>
-
-  <g transform="translate(30, 55)">
-    <g transform="translate(0, 0)">
-      <text font-size="13" fill="#cbd5e1">JavaScript / TypeScript</text>
-      <text x="430" font-size="13" font-weight="700" fill="#f7df1e" class="mono" text-anchor="end">40%</text>
-      <rect y="8" width="430" height="8" rx="4" fill="#251d42"/>
-      <rect y="8" width="172" height="8" rx="4" fill="#f7df1e"/>
-    </g>
-
-    <g transform="translate(0, 30)">
-      <text font-size="13" fill="#cbd5e1">Python</text>
-      <text x="430" font-size="13" font-weight="700" fill="#6ee7f5" class="mono" text-anchor="end">25%</text>
-      <rect y="8" width="430" height="8" rx="4" fill="#251d42"/>
-      <rect y="8" width="107" height="8" rx="4" fill="#6ee7f5"/>
-    </g>
-
-    <g transform="translate(0, 60)">
-      <text font-size="13" fill="#cbd5e1">React / HTML &amp; CSS</text>
-      <text x="430" font-size="13" font-weight="700" fill="#b9a6ff" class="mono" text-anchor="end">20%</text>
-      <rect y="8" width="430" height="8" rx="4" fill="#251d42"/>
-      <rect y="8" width="86" height="8" rx="4" fill="#b9a6ff"/>
-    </g>
-
-    <g transform="translate(0, 90)">
-      <text font-size="13" fill="#cbd5e1">C++ / Java / C#</text>
-      <text x="430" font-size="13" font-weight="700" fill="#f472b6" class="mono" text-anchor="end">15%</text>
-      <rect y="8" width="430" height="8" rx="4" fill="#251d42"/>
-      <rect y="8" width="65" height="8" rx="4" fill="#f472b6"/>
-    </g>
+<!-- Segmented overview bar -->
+<g transform="translate(24,64)">
+  <rect x="0" y="0" width="432" height="14" rx="7" fill="#1c2740"/>
+  <g class="seg">
+    <rect x="0"   y="0" width="112" height="14" fill="url(#lg2)"/>
+    <rect x="112" y="0" width="86"  height="14" fill="url(#lg3)"/>
+    <rect x="198" y="0" width="70"  height="14" fill="url(#lg1)"/>
+    <rect x="268" y="0" width="52"  height="14" fill="url(#lg6)"/>
+    <rect x="320" y="0" width="44"  height="14" fill="url(#lg4)"/>
+    <rect x="364" y="0" width="38"  height="14" fill="url(#lg5)"/>
+    <rect x="402" y="0" width="30"  height="14" fill="url(#lg7)"/>
   </g>
+  <rect x="0" y="0" width="432" height="14" rx="7" fill="none" stroke="#2a3a5c" stroke-width="1"/>
+</g>
+
+<!-- Rows -->
+<g transform="translate(24,104)" class="mono" font-size="12.5">
+  <g class="lab" style="animation-delay:0.2s">
+    <text x="0" y="12" fill="#f7df1e">JavaScript</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">26%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="112" height="7" rx="3.5" fill="url(#lg2)" class="bar" style="animation-delay:0.3s"/>
+  </g>
+  <g transform="translate(0,34)" class="lab" style="animation-delay:0.35s">
+    <text x="0" y="12" fill="#3776ab">Python</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">20%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="86" height="7" rx="3.5" fill="url(#lg3)" class="bar" style="animation-delay:0.45s"/>
+  </g>
+  <g transform="translate(0,68)" class="lab" style="animation-delay:0.5s">
+    <text x="0" y="12" fill="#61dafb">React / JSX</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">16%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="70" height="7" rx="3.5" fill="url(#lg1)" class="bar" style="animation-delay:0.6s"/>
+  </g>
+  <g transform="translate(0,102)" class="lab" style="animation-delay:0.65s">
+    <text x="0" y="12" fill="#c9d3e0">C++ / Java</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">12%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="52" height="7" rx="3.5" fill="url(#lg6)" class="bar" style="animation-delay:0.75s"/>
+  </g>
+  <g transform="translate(0,136)" class="lab" style="animation-delay:0.8s">
+    <text x="0" y="12" fill="#68a063">Node.js</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">10%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="44" height="7" rx="3.5" fill="url(#lg4)" class="bar" style="animation-delay:0.9s"/>
+  </g>
+  <g transform="translate(0,170)" class="lab" style="animation-delay:0.95s">
+    <text x="0" y="12" fill="#f29111">SQL / PHP</text>
+    <text x="432" y="12" text-anchor="end" fill="#8fa2c9">9%</text>
+    <rect x="0" y="18" width="432" height="7" rx="3.5" fill="#1c2740"/>
+    <rect x="0" y="18" width="38" height="7" rx="3.5" fill="url(#lg5)" class="bar" style="animation-delay:1.05s"/>
+  </g>
+</g>
 </svg>

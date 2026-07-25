@@ -1,36 +1,34 @@
 <div align="center">
 
-  <!-- Dark & Light Mode Auto-Switching Banner -->
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
-    <img alt="Sanket Bhende Banner" src="banner.svg?v=1" width="100%">
-  </picture>
+<!-- Dark & Light Mode Auto-Switching Banner -->
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
+  <img alt="Sanket Bhende Banner" src="banner.svg?v=1" width="100%">
+</picture>
 
-  <br/><br/>
+<br/><br/>
 
-  <!-- Swinging ID Badge -->
-  <img src="lanyard.svg?v=3" alt="Sanket Bhende Developer ID Badge" width="300">
+<!-- Swinging ID Badge -->
+<img src="lanyard.svg?v=3" alt="Sanket Bhende Developer ID Badge" width="300">
 
-  <br/><br/>
+<br/><br/>
 
-  <!-- Social Badges -->
-  <a href="mailto:sanketbhende0@gmail.com">
-    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
-  </a>
-  <a href="https://github.com/mrsankya">
-    <img src="https://img.shields.io/badge/mrsankya-161028?style=for-the-badge&logo=github&logoColor=ff2a85" alt="GitHub"/>
-  </a>
-  <a href="https://linkedin.com/in/mr-sanket-bhendecse">
-    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
-  </a>
-  <a href="https://instagram.com/sanket._.bhende">
-    <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
-  </a>
+<!-- Social Badges -->
+<a href="mailto:sanketbhende0@gmail.com">
+  <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
+</a>
+<a href="https://github.com/mrsankya">
+  <img src="https://img.shields.io/badge/mrsankya-161028?style=for-the-badge&logo=github&logoColor=ff2a85" alt="GitHub"/>
+</a>
+<a href="https://linkedin.com/in/mr-sanket-bhendecse">
+  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
+</a>
+<a href="https://instagram.com/sanket._.bhende">
+  <img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" alt="Instagram"/>
+</a>
 
 </div>
-
-<br/>
 
 ---
 
@@ -47,11 +45,11 @@ Sanket Bhende is a passionate technology enthusiast and **Full-Stack Developer**
 
 ### 💻 Tech Stack & Skills
 
-```gfm
-  Frontend   :: React.js • HTML5 • CSS3 • TailwindCSS • JavaScript
-  Backend    :: Node.js • Express • Python • PHP • C# • Java • C++
-  Databases  :: SQL • MySQL • MongoDB
-  AI & Tools :: Git • GitHub • AI Assistants • REST APIs
+```text
+Frontend   :: React.js • HTML5 • CSS3 • TailwindCSS • JavaScript
+Backend    :: Node.js • Express • Python • PHP • C# • Java • C++
+Databases  :: SQL • MySQL • MongoDB
+AI & Tools :: Git • GitHub • AI Assistants • REST APIs
 ```
 
 <div align="center">
@@ -75,20 +73,20 @@ Sanket Bhende is a passionate technology enthusiast and **Full-Stack Developer**
 
 <div align="center">
 
-  <table>
-    <tr>
-      <td width="50%">
-        <img src="./stats.svg?v=1" alt="GitHub Stats" width="100%"/>
-      </td>
-      <td width="50%">
-        <img src="./langs.svg?v=1" alt="Top Languages" width="100%"/>
-      </td>
-    </tr>
-  </table>
+<table>
+<tr>
+<td width="50%">
+<img src="stats.svg?v=1" alt="GitHub Stats" width="100%"/>
+</td>
+<td width="50%">
+<img src="langs.svg?v=1" alt="Top Languages" width="100%"/>
+</td>
+</tr>
+</table>
 
-  <br/>
+<br/>
 
-  <img src="./trophies.svg?v=1" alt="GitHub Trophies" width="100%"/>
+<img src="trophies.svg?v=1" alt="GitHub Trophies" width="100%"/>
 
 </div>
 
@@ -97,7 +95,13 @@ Sanket Bhende is a passionate technology enthusiast and **Full-Stack Developer**
 ### 🐍 Contribution Activity Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake.svg?v=1" alt="Snake Contribution Graph" width="100%"/>
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake-dark.svg?v=1">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake.svg?v=1">
+  <img alt="Snake Contribution Graph" src="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake.svg?v=1" width="100%">
+</picture>
+
 </div>
 
 ---

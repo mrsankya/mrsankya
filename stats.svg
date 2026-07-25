@@ -1,56 +1,81 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 200" width="100%" height="100%">
-  <defs>
-    <linearGradient id="statBg" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#18132b"/>
-      <stop offset="100%" stop-color="#120f1e"/>
-    </linearGradient>
-    <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#b9a6ff"/>
-      <stop offset="100%" stop-color="#6ee7f5"/>
-    </linearGradient>
-  </defs>
-
+<svg width="480" height="280" viewBox="0 0 480 280" xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <linearGradient id="ringGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+    <stop offset="0%" stop-color="#00f0ff"/>
+    <stop offset="100%" stop-color="#7b2ff7"/>
+  </linearGradient>
+  <linearGradient id="barGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+    <stop offset="0%" stop-color="#ff2ec4"/>
+    <stop offset="100%" stop-color="#00f0ff"/>
+  </linearGradient>
+  <filter id="softGlowS" x="-80%" y="-80%" width="260%" height="260%">
+    <feGaussianBlur stdDeviation="4"/>
+  </filter>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&amp;family=Outfit:wght@600;800&amp;display=swap');
-    text { font-family: 'Outfit', sans-serif; }
-    .mono { font-family: 'Fira Code', monospace; }
+    .mono { font-family:'Cascadia Code','Fira Code','Consolas',monospace; }
+    .sans { font-family:'Segoe UI','Helvetica Neue',Arial,sans-serif; }
+    .card-in { animation: cardIn 0.6s ease forwards; opacity:0; }
+    @keyframes cardIn { from{opacity:0; transform:translateY(8px);} to{opacity:1; transform:translateY(0);} }
+    .ring-anim {
+      stroke-dasharray: 345;
+      stroke-dashoffset: 345;
+      animation: ringFill 2s ease-out 0.3s forwards;
+    }
+    @keyframes ringFill { to { stroke-dashoffset: 41.4; } }
+    .bar-anim { animation: barGrow 1.6s ease-out forwards; }
+    @keyframes barGrow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
+    .b1 { animation-delay: 0.3s; transform-origin: left; }
+    .b2 { animation-delay: 0.5s; transform-origin: left; }
+    .b3 { animation-delay: 0.7s; transform-origin: left; }
+    .b4 { animation-delay: 0.9s; transform-origin: left; }
+    .row-in { opacity:0; animation: rowIn 0.5s ease forwards; }
+    .r1{animation-delay:0.3s;} .r2{animation-delay:0.5s;} .r3{animation-delay:0.7s;} .r4{animation-delay:0.9s;}
+    @keyframes rowIn { from{opacity:0; transform:translateX(-6px);} to{opacity:1; transform:translateX(0);} }
+    .flicker { animation: flick 3s ease-in-out infinite; }
+    @keyframes flick { 0%,100%{opacity:1;} 50%{opacity:0.85;} }
   </style>
+</defs>
 
-  <rect width="490" height="200" rx="16" fill="url(#statBg)" stroke="#2e254d" stroke-width="1.5"/>
+<rect width="480" height="280" rx="16" fill="#0a0e17" stroke="#2a3a5c" stroke-width="1.5"/>
+<text x="24" y="34" class="sans" font-size="16" font-weight="700" fill="#f3f6ff">Sanket's GitHub Stats</text>
+<line x1="24" y1="46" x2="456" y2="46" stroke="#1c2740" stroke-width="1"/>
 
-  <!-- Left Ring -->
-  <g transform="translate(75, 100)">
-    <circle r="55" fill="none" stroke="#251d42" stroke-width="10"/>
-    <circle r="55" fill="none" stroke="url(#ringGrad)" stroke-width="10" stroke-dasharray="345" stroke-dashoffset="50">
-      <animate attributeName="stroke-dashoffset" values="345;50" dur="2s" ease="ease-out"/>
-    </circle>
-    <text y="-5" font-size="28" font-weight="900" fill="#ffffff" text-anchor="middle">S+</text>
-    <text y="18" font-size="11" font-weight="800" fill="#6ee7f5" text-anchor="middle" letter-spacing="1">RANK</text>
+<!-- Rank ring -->
+<g transform="translate(110,150)" class="flicker">
+  <circle r="60" fill="none" stroke="#1c2740" stroke-width="12"/>
+  <circle r="60" fill="none" stroke="url(#ringGrad)" stroke-width="12" stroke-linecap="round"
+          class="ring-anim" transform="rotate(-90)" filter="url(#softGlowS)"/>
+  <text x="0" y="-4" text-anchor="middle" class="sans" font-size="26" font-weight="700" fill="#00f0ff">A+</text>
+  <text x="0" y="18" text-anchor="middle" class="mono" font-size="11" fill="#8fa2c9">TOP 12%</text>
+</g>
+
+<!-- Stat rows -->
+<g transform="translate(220,72)">
+  <g class="row-in r1">
+    <text x="0" y="14" class="mono" font-size="13" fill="#ff58d3">★ Total Stars</text>
+    <text x="236" y="14" text-anchor="end" class="mono" font-size="13" fill="#e6e9f2">1,240</text>
+    <rect x="0" y="20" width="236" height="6" rx="3" fill="#1c2740"/>
+    <rect x="0" y="20" width="200" height="6" rx="3" fill="url(#barGrad)" class="bar-anim b1"/>
   </g>
-
-  <!-- Right Rows -->
-  <g transform="translate(175, 35)">
-    <text font-size="16" font-weight="800" fill="#b9a6ff" letter-spacing="1">GITHUB STATS</text>
-
-    <g transform="translate(0, 30)">
-      <text font-size="13" fill="#cbd5e1">Total Commits (2026):</text>
-      <text x="250" font-size="14" font-weight="700" fill="#6ee7f5" class="mono" text-anchor="end">520+</text>
-      <rect y="10" width="250" height="6" rx="3" fill="#251d42"/>
-      <rect y="10" width="215" height="6" rx="3" fill="#6ee7f5"/>
-    </g>
-
-    <g transform="translate(0, 65)">
-      <text font-size="13" fill="#cbd5e1">Pull Requests &amp; Issues:</text>
-      <text x="250" font-size="14" font-weight="700" fill="#b9a6ff" class="mono" text-anchor="end">75+</text>
-      <rect y="10" width="250" height="6" rx="3" fill="#251d42"/>
-      <rect y="10" width="185" height="6" rx="3" fill="#b9a6ff"/>
-    </g>
-
-    <g transform="translate(0, 100)">
-      <text font-size="13" fill="#cbd5e1">Contributed Repositories:</text>
-      <text x="250" font-size="14" font-weight="700" fill="#facc15" class="mono" text-anchor="end">30+</text>
-      <rect y="10" width="250" height="6" rx="3" fill="#251d42"/>
-      <rect y="10" width="200" height="6" rx="3" fill="#facc15"/>
-    </g>
+  <g class="row-in r2" transform="translate(0,44)">
+    <text x="0" y="14" class="mono" font-size="13" fill="#00f0ff">⑂ Total Commits</text>
+    <text x="236" y="14" text-anchor="end" class="mono" font-size="13" fill="#e6e9f2">3,850</text>
+    <rect x="0" y="20" width="236" height="6" rx="3" fill="#1c2740"/>
+    <rect x="0" y="20" width="220" height="6" rx="3" fill="url(#barGrad)" class="bar-anim b2"/>
   </g>
+  <g class="row-in r3" transform="translate(0,88)">
+    <text x="0" y="14" class="mono" font-size="13" fill="#2ee6a8">⇄ Pull Requests</text>
+    <text x="236" y="14" text-anchor="end" class="mono" font-size="13" fill="#e6e9f2">186</text>
+    <rect x="0" y="20" width="236" height="6" rx="3" fill="#1c2740"/>
+    <rect x="0" y="20" width="150" height="6" rx="3" fill="url(#barGrad)" class="bar-anim b3"/>
+  </g>
+  <g class="row-in r4" transform="translate(0,132)">
+    <text x="0" y="14" class="mono" font-size="13" fill="#febc2e">◎ Issues Resolved</text>
+    <text x="236" y="14" text-anchor="end" class="mono" font-size="13" fill="#e6e9f2">97</text>
+    <rect x="0" y="20" width="236" height="6" rx="3" fill="#1c2740"/>
+    <rect x="0" y="20" width="110" height="6" rx="3" fill="url(#barGrad)" class="bar-anim b4"/>
+  </g>
+</g>
+
+<text x="24" y="264" class="mono" font-size="10" fill="#3d4d70">Updated automatically via GitHub Actions</text>
 </svg>
