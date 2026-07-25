@@ -2,15 +2,15 @@
 
 <!-- Dark & Light Mode Auto-Switching Banner -->
 <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
-  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
-  <img alt="Sanket Bhende Banner" src="banner.svg?v=1" width="100%">
+  <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=2">
+  <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=2">
+  <img alt="Sanket Bhende Banner" src="banner.svg?v=2" width="100%">
 </picture>
 
 <br/><br/>
 
 <!-- Swinging ID Badge -->
-<img src="lanyard.svg?v=3" alt="Sanket Bhende Developer ID Badge" width="300">
+<img src="lanyard.svg?v=4" alt="Sanket Bhende Developer ID Badge" width="300">
 
 <br/><br/>
 
