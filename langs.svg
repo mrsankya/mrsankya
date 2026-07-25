@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 490 200" width="100%" height="100%">
+  <defs>
+    <linearGradient id="lang-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#15182a"/>
+      <stop offset="100%" stop-color="#0b0d19"/>
+    </linearGradient>
+  </defs>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@600&amp;family=Outfit:wght@600;800&amp;display=swap');
+    text { font-family: 'Outfit', sans-serif; }
+    .mono { font-family: 'Fira Code', monospace; }
+  </style>
+
+  <rect width="490" height="200" rx="16" fill="url(#lang-bg)" stroke="#2a2e4a" stroke-width="1.5"/>
+
+  <text x="30" y="35" font-size="16" font-weight="800" fill="#00f2fe" letter-spacing="1">MOST USED LANGUAGES</text>
+
+  <g transform="translate(30, 55)">
+    <g transform="translate(0, 0)">
+      <text font-size="13" fill="#cbd5e1">JavaScript / TypeScript</text>
+      <text x="430" font-size="13" font-weight="700" fill="#f7df1e" class="mono" text-anchor="end">40%</text>
+      <rect y="8" width="430" height="8" rx="4" fill="#252945"/>
+      <rect y="8" width="172" height="8" rx="4" fill="#f7df1e"/>
+    </g>
+
+    <g transform="translate(0, 30)">
+      <text font-size="13" fill="#cbd5e1">Python</text>
+      <text x="430" font-size="13" font-weight="700" fill="#38bdf8" class="mono" text-anchor="end">25%</text>
+      <rect y="8" width="430" height="8" rx="4" fill="#252945"/>
+      <rect y="8" width="107" height="8" rx="4" fill="#38bdf8"/>
+    </g>
+
+    <g transform="translate(0, 60)">
+      <text font-size="13" fill="#cbd5e1">React / HTML &amp; CSS</text>
+      <text x="430" font-size="13" font-weight="700" fill="#ff7b72" class="mono" text-anchor="end">20%</text>
+      <rect y="8" width="430" height="8" rx="4" fill="#252945"/>
+      <rect y="8" width="86" height="8" rx="4" fill="#ff7b72"/>
+    </g>
+
+    <g transform="translate(0, 90)">
+      <text font-size="13" fill="#cbd5e1">C++ / C# / Java</text>
+      <text x="430" font-size="13" font-weight="700" fill="#a78bfa" class="mono" text-anchor="end">15%</text>
+      <rect y="8" width="430" height="8" rx="4" fill="#252945"/>
+      <rect y="8" width="65" height="8" rx="4" fill="#a78bfa"/>
+    </g>
+  </g>
+</svg>
