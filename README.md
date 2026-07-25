@@ -107,5 +107,5 @@ AI & Tools :: Git • GitHub • AI Assistants • REST APIs
 ---
 
 <div align="center">
-  <sub>Designed &amp; Crafted with ❤️ by <a href="https://github.com/mrsankya">Sanket Bhende</a></sub>
+  <sub>Designed &amp;  by <a href="https://github.com/mrsankya">Sanket Bhende</a></sub>
 </div>
