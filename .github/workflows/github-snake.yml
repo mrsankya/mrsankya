@@ -2,7 +2,6 @@ name: Generate Contribution Snake
 
 on:
   schedule:
-    # Runs daily at 00:00 UTC
     - cron: "0 0 * * *"
   workflow_dispatch:
   push:
@@ -13,16 +12,21 @@ permissions:
   contents: write
 
 jobs:
-  generate-snake:
+  generate:
     runs-on: ubuntu-latest
+    timeout-minutes: 5
+
     steps:
-      - name: Generate snake animation
-        uses: Platane/snk@v3
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate Snake SVG
+        uses: Platane/snk/svg-only@v3
         with:
           github_user_name: mrsankya
           outputs: |
-            dist/github-contribution-grid-snake.svg?color_snake=#00f2fe&color_dots=#161b22,#0e4429,#006d32,#26a641,#39d353
-            dist/github-contribution-grid-snake-dark.svg?color_snake=#ff2a85&color_dots=#161b22,#40c463,#30a14e,#216e39,#9be9a8
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
 
       - name: Push Snake SVG to Output Branch
         run: |
