@@ -1,25 +1,25 @@
 <div align="center">
 
-  <!-- Dark & Light Banner Auto-Switching -->
+  <!-- Dark & Light Mode Auto-Switching Banner -->
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=2">
-    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=2">
-    <img alt="Sanket Bhende Banner" src="banner.svg?v=2" width="100%">
+    <source media="(prefers-color-scheme: dark)" srcset="banner.svg?v=1">
+    <source media="(prefers-color-scheme: light)" srcset="banner-light.svg?v=1">
+    <img alt="Sanket Bhende Banner" src="banner.svg?v=1" width="100%">
   </picture>
-
-  <br/>
-
-  <!-- Developer ID Badge -->
-  <img src="lanyard.svg?v=2" alt="Sanket Bhende Developer ID Badge" width="280">
 
   <br/><br/>
 
-  <!-- Shields.io Badges in Sakshi Lavender/Violet Palette -->
+  <!-- Swinging ID Badge -->
+  <img src="lanyard.svg?v=1" alt="Sanket Bhende Developer ID Badge" width="300">
+
+  <br/><br/>
+
+  <!-- Social Badges -->
   <a href="mailto:sanketbhende0@gmail.com">
-    <img src="https://img.shields.io/badge/sanketbhende0%40gmail.com-b9a6ff?style=for-the-badge&logo=gmail&logoColor=161028" alt="Email"/>
+    <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email"/>
   </a>
   <a href="https://github.com/mrsankya">
-    <img src="https://img.shields.io/badge/mrsankya-161028?style=for-the-badge&logo=github&logoColor=b9a6ff" alt="GitHub"/>
+    <img src="https://img.shields.io/badge/mrsankya-161028?style=for-the-badge&logo=github&logoColor=ff2a85" alt="GitHub"/>
   </a>
   <a href="https://linkedin.com/in/mr-sanket-bhendecse">
     <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"/>
@@ -32,18 +32,27 @@
 
 <br/>
 
-## About Me
+---
 
-I'm a passionate technology enthusiast and **Full-Stack Developer** from Maharashtra, India, who loves turning ideas into high-performance working products — from database architecture and REST APIs up to smooth, interactive user interfaces.
+### 💫 About Me
 
-- 🎓 Computer Science Engineering & Technology Enthusiast
-- 💻 Full-Stack Developer (React, Node.js, Python, C++, Java, PHP)
-- 🚀 Building AI voice assistants & modern web applications
-- ☕ Fueled by coffee, curiosity, and clean commits
+Sanket Bhende is a passionate technology enthusiast and **Full-Stack Developer** from Maharashtra, India, who loves turning ideas into high-performance working products — from database schema and REST APIs up to smooth, interactive user interfaces.
 
-<br/>
+- 🎓 **Specialization**: Computer Science & Full-Stack Development
+- 💻 **Core Tech**: React, Node.js, Python, JavaScript, C++, Java, PHP, SQL
+- 🚀 **Building**: AI voice assistants & scalable web applications
+- ☕ **Motto**: *"Code. Build. Repeat. • Transforming Ideas into Reality"*
 
-## Tech Stack
+---
+
+### 💻 Tech Stack & Skills
+
+```gfm
+  Frontend   :: React.js • HTML5 • CSS3 • TailwindCSS • JavaScript
+  Backend    :: Node.js • Express • Python • PHP • C# • Java • C++
+  Databases  :: SQL • MySQL • MongoDB
+  AI & Tools :: Git • GitHub • AI Assistants • REST APIs
+```
 
 <div align="center">
 
@@ -60,39 +69,39 @@ I'm a passionate technology enthusiast and **Full-Stack Developer** from Maharas
 
 </div>
 
-<br/>
+---
 
-## Performance & Statistics
+### 📊 Performance & Statistics
 
 <div align="center">
 
   <table>
     <tr>
       <td width="50%">
-        <img src="./stats.svg?v=2" alt="GitHub Stats" width="100%"/>
+        <img src="./stats.svg?v=1" alt="GitHub Stats" width="100%"/>
       </td>
       <td width="50%">
-        <img src="./langs.svg?v=2" alt="Top Languages" width="100%"/>
+        <img src="./langs.svg?v=1" alt="Top Languages" width="100%"/>
       </td>
     </tr>
   </table>
 
   <br/>
 
-  <img src="./trophies.svg?v=2" alt="GitHub Trophies" width="100%"/>
+  <img src="./trophies.svg?v=1" alt="GitHub Trophies" width="100%"/>
 
 </div>
 
-<br/>
+---
 
-## Contribution Activity
+### 🐍 Contribution Activity Graph
 
 <div align="center">
-  <img src="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake.svg?v=2" alt="Snake Contribution Graph" width="100%"/>
+  <img src="https://raw.githubusercontent.com/mrsankya/mrsankya/output/github-contribution-grid-snake.svg?v=1" alt="Snake Contribution Graph" width="100%"/>
 </div>
 
 ---
 
 <div align="center">
-  <sub>Crafted with ❤️ by <a href="https://github.com/mrsankya">Sanket Bhende</a></sub>
+  <sub>Designed &amp; Crafted with ❤️ by <a href="https://github.com/mrsankya">Sanket Bhende</a></sub>
 </div>
