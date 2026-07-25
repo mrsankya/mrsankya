@@ -10,7 +10,7 @@
   <br/><br/>
 
   <!-- Swinging ID Badge -->
-  <img src="lanyard.svg?v=1" alt="Sanket Bhende Developer ID Badge" width="300">
+  <img src="lanyard.svg?v=3" alt="Sanket Bhende Developer ID Badge" width="300">
 
   <br/><br/>
 
